@@ -1,0 +1,42 @@
+html{
+    margin:0;
+    padding:0;
+    font-size:10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size:4rem;
+    color: green;
+    text-shadow: 0.5px 0.5px 0 royalblue;
+}
+.main{
+    width:30%;
+    border: 2px solid royalblue;
+    margin: 10px auto;
+    padding: 20px;
+    font-size:2.5rem;
+}
+a{
+    display: block;
+    border: 1px solid royalblue;
+    text-align:center;
+    width:80px;
+    margin: 10px auto;
+    text-decoration: none;
+}
+#submit{
+    display: block;
+    border: 1px solid royalblue;
+    text-align:center;
+    width:80px;
+    margin: 10px auto;
+    text-decoration: none;
+}
+pre{
+    color: green;
+    text-shadow: 0.5px 0.5px 0 royalblue;
+}
+input{
+    color: orangered;
+}

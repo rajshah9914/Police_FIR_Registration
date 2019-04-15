@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        html{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            width:100%;
+            height:100%;
+        }
+        .outer{
+            height:5vh;
+            width:100%;
+        }
+        .inner-left{
+            width:48%;
+            float: left;
+            border:1px solid black;
+        }
+        .inner-right{
+            width:50%;
+            float:right;
+            border: 1px solid black;
+        }
+        h1{
+            text-align: center;0.
+        }
+    </style>
+</head>
+<body>
+    <h1>UserId:<h1 id="userid">{{id}}</h1></h1>
+    <div class="main">
+    <div class="outer">
+        <div class="inner-left">
+            <h1>CASES</h1>
+        </div>
+        <div class="inner-right">
+            <h1>STATUS</h1>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="user_complaints.js"></script>
+</html>

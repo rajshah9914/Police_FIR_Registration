@@ -1,0 +1,83 @@
+html{
+    margin:0;
+    padding:0;
+    font-size:10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: green;
+    text-shadow: 0.5px 0.5px 0 royalblue;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.main{
+    position:relative;
+    flex-basis:40%;
+    height:400px;
+    border:2px solid royalblue;
+    padding: 10px;
+}
+a{
+    display: block;
+    margin-left: 5px;
+    font-size: 2rem;
+    text-decoration:none;
+    margin-bottom: 10px;
+    color:orangered;
+    outline: none;
+}
+p{
+    margin:5px;
+    font-size: 2.5rem;
+}
+#login{
+    width:50px;
+    text-align: center;
+    border: 1px solid coral;
+    color:black;
+    padding:5px;
+}
+input[type="text"]{
+    border:none;
+    border-bottom: 2px solid black;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    background: transparent;
+    outline:none;
+}
+input[type="password"]{
+    border:0;
+    border-bottom: 2px solid black;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    outline: none;
+}
+#one{
+    display:block;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    width:50px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid black;
+    height:25px;
+    text-align: center;
+}
+.image{
+    position: absolute;
+    top:80px;
+    right:40px;
+}
+img{
+    width:150px;
+    height:250px;
+}

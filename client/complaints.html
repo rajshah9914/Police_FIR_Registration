@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style5.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400i" rel="stylesheet">
+        <title>
+            E-complaint portal
+        </title>
+    </head>
+    <body>
+            <div class="header">
+                    <div class="h11"><img src="image1.jpg"></div>
+                    <div class="h21">
+                        <p>Government of India</p>
+                        <p id="one">Police Department</p>
+                    </div>
+                </div>
+                <header>
+                        <a href="user.html" >User</a>
+                        <a href="police.html" >Police</a>
+                        <a href="complaints.html" >Complain</a>
+                        <a href="report.html">Report</a>
+                        <a href="about.html" >About</a>
+                        <a href="update.html">Update</a>
+                </header>
+        <div class="main">
+            <form method="POST" action="/complaint">
+            <h1>Complaint Page</h1>
+            <p>UserID:</p>
+            <input type="text" placeholder="Enter UserID" id="userID" name ="userid" required>
+            <p>Police_ID:</p>
+            <input type="text" placeholder="Enter policeofficerID" id="user" name ="poid" required>
+            <p>Policestation_ID:</p>
+            <input type="text" placeholder="Enter policeStationID" id="user" name ="psid" required>
+            <p>Complaint:<textarea  id="text" placeholder="Enter complaint with sufficient information" name="info" required></textarea></p>
+            <button id="submit">Submit</button>
+            <div class="image">
+                    <img src="image1.jpg">
+                </div>
+            </form>
+        </div>
+        <footer>&copy; Copyright 2018 HTML.am</footer>
+    </body>
+    <script>
+        var a=document.getElementById('submit');
+        a.addEventListener('click',validate);
+        function validate(){
+            var n1=document.getElementById('userID').value;
+                var n2=document.getElementById('user').value;
+                var n3=document.getElementById('text').value;
+                if(n1.length==0)
+                {
+                    alert("Enter userID");
+                }
+                else if(n2.length==0)
+                {
+                    alert("Enter user name");
+                }
+                else if(n3.length==0)
+                {
+                    alert("Enter password");
+                }
+        }
+
+    </script>
+</html>

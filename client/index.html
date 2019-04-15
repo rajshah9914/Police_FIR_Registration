@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link href="styles3.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400i" rel="stylesheet">
+		<title>
+            E-complaint portal
+        </title>
+    </head>
+    <body>
+        <h1>User Details</h1>
+        <div class="main">
+        <form name="f" method="POST" action="/check">
+        <pre>        Username:<input type="text" id="user" placeholder="Enter username" name = "username" required></pre>
+        <pre>          UserId:<input type="text"  id="userId" placeholder="Enter userID" name = "userid" required></pre>
+        <pre>        Password:<input type="password" id="p1" placeholder="enter your password" name = "password" required></pre>
+        <pre>Confirm Password:<input type="password" id="p2" placeholder="confirm password" required></pre>
+        <pre>   Mobile Number:<input type="number" placeholder="enter mobile no" name = "mobile" required></pre>
+        <pre>        Email_ID:<input type="email" id="email" placeholder="email_Id" name = "email" required></pre>
+		<pre>         Address:<input type="text" placeholder="enter your address" name = "address" required></pre>
+		<input type="submit" id="submit" value="submit">
+        <a href="user.html" >Login</a>
+        </form>
+        </div>
+    </body>
+    <script>
+		var a=document.getElementById('submit');
+		a.addEventListener('click',validate);
+		function validate()
+		{
+			var n1=document.getElementById('user').value;
+			var n2=document.getElementById('userId').value;
+			var t1=document.getElementById('p1').value;
+			var t2=document.getElementById('p2').value;
+			var  x=document.getElementById('email').value;
+			var atpos=x.indexOf("@");
+			var dotpos=x.indexOf(".");
+			if(n1.length>12 || n1.length<7)
+			{
+				alert("invalid username : must be 7 to 12 ");
+				event.preventDefault();
+			}
+			else if(n2.length>12 || n2.length<7)
+			{
+				alert("invalid userId : must be 7 to 12 ");
+				event.preventDefault();
+			} 
+			else if(t1!=t2)
+			{
+				alert("password field must match");
+				event.preventDefault();
+			}
+			else if(t1.length>10 || t1.length<5)
+			{
+				alert("password length must be inside 5 and 10");
+				event.preventDefault();
+			}
+			else if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+			{
+				alert("not valid email address:");
+				event.preventDefault();
+			}
+			else
+			{
+			 alert("successfully registered");
+			}
+		}
+	</script>
+</html>

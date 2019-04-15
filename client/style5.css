@@ -1,0 +1,126 @@
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    width:100%;
+    height:150px;
+    display: flex;
+    border:2px solid crimson;
+}
+.h11{
+    position: relative;
+    flex:1 1 15%;
+}
+img{
+    position: absolute;
+    right:10px;
+    top:15px;
+    width:100px;
+    height:120px;
+}
+.h21{
+    flex:3 1 50%;
+}
+.h21 p{
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+#one{
+    font-size: 3rem;
+    margin-top: 10px;
+}
+header{
+    width:100%;
+    height:60px;
+    padding-left: 10%;
+    border: 2px solid crimson;
+    background-color: crimson;
+}
+header a{
+    display: inline-block;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    width:10%;
+    height: 60px;
+    padding-top: 15px;
+}
+header a:hover{
+    background-color: aqua;
+}
+.main{
+    width:50%;
+    margin:10px auto;
+    position: relative;
+    border:1px solid crimson;
+    padding: 10px;
+}
+p{
+    margin:5px;
+    font-size: 2.5rem;
+}
+input[type="text"]{
+    border:none;
+    border-bottom: 2px solid black;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    background: transparent;
+    outline:none;
+}
+input[type="password"]{
+    border:0;
+    border-bottom: 2px solid black;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    outline: none;
+}
+.image{
+    position: absolute;
+    top:80px;
+    right:40px;
+}
+.image img{
+    width:100px;
+    height:150px;
+}
+.main a{
+        display: block;
+        margin-left: 5px;
+        font-size: 2rem;
+        text-decoration:none;
+        margin-bottom: 10px;
+        color:red;
+        outline: none;
+}
+textarea{
+    display: inline-block;
+    width:300px;
+}
+.main h1{
+    font-size: 3rem;
+    text-align: center;
+}
+button{
+    margin-top:10px;
+    width:80px;
+    font-size: 2rem;
+}
+footer{
+    height:120px;
+    width:100%;
+    text-align: center;
+    font-size: 2rem;
+    padding-top:50px;
+    border: 1px solid crimson;
+}

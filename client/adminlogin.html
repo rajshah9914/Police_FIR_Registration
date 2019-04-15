@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style1.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400i" rel="stylesheet">
+        <title>
+            E-complaint portal
+        </title>
+    </head>
+    <body>
+        <div class="main">
+            <h1>E-Complaint Portal</h1>
+            <p>Username:</p>
+            <input type="text" id="user" required placeholder="Enter Username">
+            <p>Password:</p>
+            <input type="password" id="password" required placeholder="Enter Password">
+            <a id="login" target="_self">Login</a>
+            <a href="#">Forgot your password?</a>
+            <a href="user_form.html">New Admin</a>
+            <div class="image">
+                <img src="image1.jpg">
+            </div>
+        </div>
+    </body>
+    <script>
+        var a=document.getElementById('login');
+        a.addEventListener('click',check);
+        function check(){
+        var user="ADMIN";
+        var password="ADMIN123";
+        if(user===document.getElementById('user').value && password===document.getElementById('password').value)
+        {
+            window.open('about.html');
+        }
+        else
+        {
+            alert("Enter correct user name and password");
+        }
+        }
+    </script>
+</html>

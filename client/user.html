@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style4.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400i" rel="stylesheet">
+        <title>
+            E-complaint portal
+        </title>
+    </head>
+    <body>
+            <div class="header">
+                    <div class="h11"><img src="image1.jpg"></div>
+                    <div class="h21">
+                        <p>Government of India</p>
+                        <p id="one">Police Department</p>
+                    </div>
+                </div>
+                <header>
+                        <a href="user.html" >User</a>
+                        <a href="police.html" >Police</a>
+                        <a href="complaints.html" >Complain</a>
+                        <a href="report.html">Report</a>
+                        <a href="about.html" >About</a>
+                        <a href="update.html">Update</a>
+                </header>
+        <div class="main">
+            <form method="POST" action="/login">
+            <h1>User Access</h1>
+            <p>UserID:</p>
+            <input type="text" placeholder="Enter UserID" id="userID" name="userid" required/>
+            <p>Username:</p>
+            <input type="text" placeholder="Enter Username" id="user" name="username" required/>
+            <p>Password:</p>
+            <input type="password" placeholder="Enter Password" id="p1" name="password" required/>
+            <input type="submit" value="LOGIN">
+            <a href="#">Forgot your password?</a>
+            <a href="user_form.html">New User Click Here</a>
+            </form>
+            <div class="image">
+                <img src="image1.jpg">
+            </div>
+        </div>
+        <footer>&copy; Copyright 2018 HTML.am</footer> 
+        <script>
+            var a=document.getElementById('one1');
+            a.addEventListener('click',validate);
+            function validate(){
+                var n1=document.getElementById('userID').value;
+                var n2=document.getElementById('user').value;
+                var n3=document.getElementById('p1').value;
+                if(n1.length==0)
+                {
+                    alert("Enter userID");
+                    event.preventDefault();
+                }
+                else if(n2.length==0)
+                {
+                    alert("Enter user name");
+                    event.preventDefault();
+                }
+                else if(n3.length==0)
+                {
+                    alert("Enter password");
+                    event.preventDefault();
+                }
+                // else{
+                //     window.open('complaints.html');
+                // }
+            }
+        </script>
+    </body>
+</html>
